@@ -15,8 +15,8 @@
 
     <script>
       function submitForm(){
-        var username = $('#username').val();
-        window.location.href = 'lobby.html?username='+username;
+        var username = $("#username").val();
+        window.location.href = "lobby.html?username="+username;
       }
     </script>
 
@@ -32,14 +32,14 @@
           <h2>Enter Your User Name</h2>
         </div>
       </div>
-      <div class='row'>
-        <div class='col'>
-          <form onsubmit='submitForm(); return false;' class='form-inline'>
-            <div class='form-group'>
-              <label for='username' class='col-form-label sr-only'>Enter your user name</label>
-              <input class='form-control' type='text' value='' id='username' placeholder="Enter your user name"/>
+      <div class="row">
+        <div class="col">
+          <form onsubmit="submitForm(); return false;" class="form-inline">
+            <div class="form-group">
+              <label for="username" class="col-form-label sr-only">Enter your user name</label>
+              <input class="form-control" type="text" value="" id="username" placeholder="Enter your user name"/>
             </div>
-            <button type='submit' class='btn btn-default btn-primary'>Done</button>
+            <button type="submit" class="btn btn-default btn-primary">Done</button>
           </form>
         </div>
       </div>
