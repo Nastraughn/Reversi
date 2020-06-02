@@ -1,5 +1,5 @@
-#body {
-    background: url('../images/top-splash.png');
+body {
+    background-image: url('../images/Peach.png');
 }
 
 table#game_board{
