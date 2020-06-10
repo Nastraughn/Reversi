@@ -315,8 +315,9 @@ socket.on('game_update',function(payload){
 		return;
 	}
 
-	$('#my_color').html('<h3 id="my_color">I am '+my_color+'</h3>');
-	$('#my_color').append('<h4>It is '+payload.game.whose_turn+'\'s turn. Elapsed time <span id="elapsed"></span></h4>');
+	$('#my_color').html('<h3 id="my_color">You are '+my_color+'</h3>');
+	$('#my_color').append('<h4>It is '+payload.game.whose_turn+'\'s turn.</h4>');
+	$('#my_color').append('<h5>Elapsed time <span id="elapsed"></span></h5>');
 
 	clearInterval(interval_timer);
 	interval_timer = setInterval(function(last_time){
@@ -439,9 +440,6 @@ socket.on('game_over',function(payload){
 	$('#game_over').html('<h1>Game Over</h1><h2>'+payload.who_won+' won!</h2>');
 	$('#game_over').append('<a href="lobby.html?username='+username+'" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Return to the lobby</a>'); 
 });
-
-
-
 
 
 

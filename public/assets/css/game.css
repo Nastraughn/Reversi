@@ -21,6 +21,6 @@ table#game_board td{
 }
 
 td.hovered_over:hover {
-	background:url('../images/Black-to-White_Token-HOVER.gif'), rgb(0,255,0);
+	background:url('../images/Black-to-White_Token-HOVER.gif'), rgb(52,115,186);
 	background-size: 100% 100%;
 }
